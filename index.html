@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News-portal</title>
+    <!-- bootstarp cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- font awesome icon  -->
+    <script src="https://kit.fontawesome.com/0520fae339.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mb-3">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">News</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="nav-ul" class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <!-- nav bar item will be place in here form javascript  -->
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+      <section class="container my-3">
+        <p id="display-count-news" class="form-control">.</p>
+        <div class="d-flex justify-content-between my-3">
+          <div class="d-flex justify-content-center align-items-center gap-2">
+            <p class="p-0 m-0">Sort:</p>
+            <select class="form-select" id="floatingSelect" aria-label="Default select example">
+              <option selected>Default</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+
+          </div>
+          <div>
+            <button class="btn btn-primary">Today's Pick</button>
+            <button class="btn btn-outline-primary">Trending</button>
+          </div>
+        </div>
+      </section>
+        <!-- display news data  -->
+        <section id="news-display-card" class="container">
+            <!-- news card show here  -->
+        </section>
+        <!-- Modal -->
+        <section>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="modal-body" class="modal-body">
+                  <!-- news details show in here  -->
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    </main>
+    <!-- bootstarp javaScript  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- external javaScript file  -->
+    <script src="main.js"></script>
+</body>
+</html>
